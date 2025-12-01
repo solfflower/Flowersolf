@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOWER SOLF</title>
+    <style>
+        /* Estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f4ff;
+            color: #333;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Encabezado */
+        .encabezado {
+            background: linear-gradient(135deg, #6a0dad, #8a2be2);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
+        }
+
+        .titulo-principal {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Tarjetas de productos */
+        .tarjeta {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(106, 13, 173, 0.15);
+        }
+
+        .tarjeta h2 {
+            color: #6a0dad;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0e6ff;
+        }
+
+        .categoria {
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 20px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .producto {
+            background-color: #faf7ff;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            border: 1px solid #e6d7ff;
+        }
+
+        .imagen-producto {
+            background-color: white;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #e6d7ff;
+            overflow: hidden;
+        }
+
+        .imagen-producto img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .nombre-producto {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4b0082;
+        }
+
+        .detalles-producto {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Botón */
+        .boton {
+            display: inline-block;
+            background-color: #8a2be2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: #6a0dad;
+        }
+
+        /* Pie de página */
+        .pie-pagina {
+            background: linear-gradient(135deg, #4b0082, #6a0dad);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .redes-sociales {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .instagram-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.2s;
+        }
+
+        .instagram-link:hover {
+            transform: scale(1.1);
+        }
+
+        .instagram-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <h1 class="titulo-principal">FLOWER SOLF</h1>
+            <p class="subtitulo">Tienda de peluches, llaveros y flores únicos</p>
+        </header>
+
+        <div class="tarjeta">
+            <h2>Productos</h2>
+
+            <div class="categoria">MUÑECOS GRANDES</div>
+            <div class="productos">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="pollogallo.png">
+                    </div>
+                    <div class="nombre-producto">Pollo vestido de gallo</div>
+                    <div class="detalles-producto">Precio: $170</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="yoda.png">
+                    </div>
+                    <div class="nombre-producto">Baby Yoda</div>
+                    <div class="detalles-producto">Precio: $250</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="pollorana.png">
+                    </div>
+                    <div class="nombre-producto">Pollo Rana</div>
+                    <div class="detalles-producto">Precio: $170</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="vaquita.png">
+                    </div>
+                    <div class="nombre-producto">Vaquita</div>
+                    <div class="detalles-producto">Precio: $280</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="snoopy-grande.png">
+                    </div>
+                    <div class="nombre-producto">Snoopy</div>
+                    <div class="detalles-producto">Precio: $250</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="oso-overol.png">
+                    </div>
+                    <div class="nombre-producto">Oso con Overol</div>
+                    <div class="detalles-producto">Precio: $200</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="stitch.png">
+                    </div>
+                    <div class="nombre-producto">Stitch</div>
+                    <div class="detalles-producto">Precio: $300</div>
+                </div>
+            </div>
+
+            <div class="categoria">MUÑECOS NORMALES</div>
+            <div class="productos">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="pollosombrero.png">
+                    </div>
+                    <div class="nombre-producto">Pollo con sombrero</div>
+                    <div class="detalles-producto">Precio: $120</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="pollo-normal.png">
+                    </div>
+                    <div class="nombre-producto">Pollo Normal</div>
+                    <div class="detalles-producto">Precio: $100</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="gallo-amarillo.png">
+                    </div>
+                    <div class="nombre-producto">Gallo Amarillo</div>
+                    <div class="detalles-producto">Precio: $100</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="pollo-blanco.png">
+                    </div>
+                    <div class="nombre-producto">Pollo blanco</div>
+                    <div class="detalles-producto">Precio: $100</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="raton-gris.png">
+                    </div>
+                    <div class="nombre-producto">Ratón gris</div>
+                    <div class="detalles-producto">Precio: $130</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="pulpo-rosa.png">
+                    </div>
+                    <div class="nombre-producto">Pulpo rosa</div>
+                    <div class="detalles-producto">Precio: $80</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="ballena-rosa.png">
+                    </div>
+                    <div class="nombre-producto">Ballena rosa</div>
+                    <div class="detalles-producto">Precio: $80</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="canasta-flores.png">
+                    </div>
+                    <div class="nombre-producto">Canasta de flores</div>
+                    <div class="detalles-producto">Precio: $100</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="cerdito.png">
+                    </div>
+                    <div class="nombre-producto">Cerdito</div>
+                    <div class="detalles-producto">Precio: $150</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="triceraptos.png">
+                    </div>
+                    <div class="nombre-producto">Triceraptos</div>
+                    <div class="detalles-producto">Precio: $150</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="raton-negro.png">
+                    </div>
+                    <div class="nombre-producto">Ratón negro</div>
+                    <div class="detalles-producto">Precio: $130</div>
+                </div>
+            </div>
+
+            <div class="categoria">FLORES</div>
+            <div class="productos">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="tulipan-rosa.png">
+                    </div>
+                    <div class="nombre-producto">Tulipan rosa</div>
+                    <div class="detalles-producto">Precio: $100</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="ramo-flores-rosas.png">
+                    </div>
+                    <div class="nombre-producto">Ramos de flores rosas</div>
+                    <div class="detalles-producto">Precio: $100</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="tulipan-rojo.png">
+                    </div>
+                    <div class="nombre-producto">Tulipan rojo</div>
+                    <div class="detalles-producto">Precio: $100</div>
+                </div>
+            </div>
+
+            <div class="categoria">LLAVEROS DE MUÑECOS</div>
+            <div class="productos">
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="pollosombrero.png">
+                    </div>
+                    <div class="nombre-producto">Pollos con sombrero</div>
+                    <div class="detalles-producto">Precio: $60</div>
+                </div>
+                
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="capibara-conejo.png">
+                    </div>
+                    <div class="nombre-producto">Capibara vestido de conejo</div>
+                    <div class="detalles-producto">Precio: $125</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="capibara-fresa.png">
+                    </div>
+                    <div class="nombre-producto">Capibara de fresa</div>
+                    <div class="detalles-producto">Precio: $125</div>
+                </div>
+                <div class="producto">
+                    <div class="imagen-producto">
+                        <img src="snoopy-llavero.png">
+                    </div>
+                    <div class="nombre-producto">Snoopy</div>
+                    <div class="detalles-producto">Precio: $75</div>
+                </div>
+                
+            </div>
+            <a href="#" class="boton">Ver Todos los Productos</a>
+        </div>
+
+        <footer class="pie-pagina">
+            <p>FLOWER SOLF - Tienda de peluches, llaveros y flores únicos</p>
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/flower_solf/" class="instagram-link">
+                    <img src="instagram-Logo.png" alt="Instagram" class="instagram-logo">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
